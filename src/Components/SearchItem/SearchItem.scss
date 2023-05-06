@@ -1,0 +1,79 @@
+.SearchItem {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+  .siImg {
+    width: 210px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .siDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 2;
+  }
+  .siDetails {
+    flex: 1;
+  }
+  .siTitle {
+    font-size: 20px;
+    color: #0071c2;
+  }
+  .siDistance {
+    font-size: 12px;
+  }
+  .siTaxiOp {
+    font-size: 12px;
+    background: #008009;
+    color: white;
+    width: max-content;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .siSubTitle {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .siFeatures {
+    font-size: 12px;
+  }
+  .siCancelOP {
+    font-size: 12px;
+    color: #008009;
+    font-weight: bold;
+  }
+  .siCancelOpSubTitle {
+    font-size: 12px;
+    color: #008009;
+  }
+  .siDetails {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .siDetailText {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
+@media (max-width:1024px) {
+  .SearchItem {
+    flex-direction: column;
+  }
+  .siImg {
+    width: 100% !important;
+  }
+  .siDesc {
+    gap: 3 !important;
+  }
+}
+@media (max-width:767px) {
+  
+}

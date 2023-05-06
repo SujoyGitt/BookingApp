@@ -1,0 +1,9 @@
+.navcontainer{
+  max-width: 1024px;
+  color: white;
+}
+@media (max-width:1024px) {
+ .navcontainer{
+   width: 100%;
+ }
+}

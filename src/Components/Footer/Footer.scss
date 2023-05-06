@@ -1,0 +1,18 @@
+.footer{
+  max-width: 1024px;
+  .fLists{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:1024px) {
+  .footer{
+    width: 100%;
+    .fList{
+      margin-top: 10px;
+      width: 150px;
+    }
+  }
+}

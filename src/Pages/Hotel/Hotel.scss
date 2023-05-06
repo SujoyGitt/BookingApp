@@ -1,0 +1,71 @@
+.hotelContainer {
+  .slider {
+    background: rgba(0, 0, 0, 0.404);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .sliderImg {
+      width: 80%;
+      height: 80vh;
+    }
+  }
+  .hotelWrapper {
+    max-width: 1024px;
+    flex-direction: column;
+    gap: 10px;
+
+    .hotelImgWrapper {
+      width: 33%;
+      height: 220px;
+    }
+
+    .hotelDetails {
+      .hotelDetailsTexts {
+        flex: 3;
+      }
+      .hotelDetailsPrice {
+        flex: 1;
+        background: #ebf3ff;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        h1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .hotelDistance {
+    color: #0071c2;
+    font-weight: 500;
+  }
+  .hotelPriceHighlight {
+    color: #008009;
+    font-weight: 500;
+  }
+}
+@media (max-width: 1024px) {
+  .hotelWrapper {
+    width: 100%;
+  }
+}
+@media (max-width:767px) {
+  .hotelImgWrapper {
+    width: 49% !important;
+  }
+   .sliderImg {
+    width: 100% !important;
+    height: 80vh;
+  }
+}
+@media (max-width:576px) {
+  .hotelImgWrapper {
+    width: 100% !important;
+  }.hotelDetails {
+    flex-direction: column;
+  }
+}
